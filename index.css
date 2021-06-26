@@ -1,0 +1,121 @@
+/* White Border */
+html,
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: none;
+  margin-bottom: none;
+  padding: 0;
+  font-family: "sans-serif";
+  font-size: 20px;
+  border-color: none;
+}
+
+.Title {
+  font-family: "Marker Felt";
+  font-weight: bold;
+}
+
+body {
+  background-image: linear-gradient(#98dbc6, #5bc8ac, #e6d72a, #f18d9e);
+  background-position: center top;
+  background-size: 100% 100%;
+  background-repeat: repeat-x repeat-y;
+  color: #1e1f26;
+}
+
+/* Centering Vertically and Horizontally */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  border: 1.5px solid #1e1f26;
+  border-radius: 5px;
+  background-color: #e6ffdb;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Times New Roman;
+  font-weight: bold;
+}
+
+/* On mouse-over */
+.btn:hover {
+  background: inherit;
+}
+
+a {
+  color: #1e1f26;
+  text-decoration: none;
+}
+
+/* Page Break */
+.space {
+  color: white;
+  margin-top: 825px;
+}
+
+/* One */
+.one {
+  border-width: 5px;
+  border-style: none;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  background-origin: padding-box;
+  background-position: center;
+  margin-bottom: 0px;
+}
+
+.containerone {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.containerone:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
